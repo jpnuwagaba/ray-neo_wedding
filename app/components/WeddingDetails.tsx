@@ -1,58 +1,41 @@
 const detailCards = [
   {
     title: "Ceremony Date",
-    value: "Saturday, 14 November 2026",
+    value: "Saturday, 09 May 2026",
     helper: "Please arrive at least 30 minutes early.",
   },
   {
     title: "Time",
-    value: "10:00 AM - 1:00 PM",
-    helper: "Main service begins at 10:30 AM.",
+    value: "11:00 AM",
+    helper: "Service begins at 11:00 AM.",
   },
   {
     title: "Church / Venue",
-    value: "St. Andrew's Cathedral, Kampala",
-    helper: "Nakasero Hill Road, Kampala.",
+    value: "Church of the Resurrection, Bugolobi COU",
+    helper: "Bugolobi, Kampala.",
   },
   {
     title: "Reception Venue",
-    value: "Serena Hotel Gardens, Kampala",
+    value: "Grandville Manor, Kampala",
     helper: "Reception begins right after photos.",
   },
-  {
-    title: "Dress Code",
-    value: "Elegant Formal",
-    helper: "Modest and celebratory attire encouraged.",
-  },
-  {
-    title: "Theme Colors",
-    value: "Sage, Blush, Sand, Clay",
-    helper: "A warm earth-toned celebration palette.",
-  },
-];
-
-const themeSwatches = [
-  { label: "Sage", color: "#5F7164" },
-  { label: "Blush", color: "#D4A48A" },
-  { label: "Sand", color: "#C9B39E" },
-  { label: "Clay", color: "#99643C" },
 ];
 
 const contacts = [
   {
     role: "Event Coordinator",
-    name: "Coordinator Name",
-    phone: "+256 XXX XXX XXX",
+    name: "Jackie Ahimbisibwe",
+    phone: "+256 706 682 914",
   },
   {
-    role: "Bride's Representative",
-    name: "Representative Name",
-    phone: "+256 XXX XXX XXX",
+    role: "Bride Groom",
+    name: "Raymond Muhwezi",
+    phone: "+256 787 348 931",
   },
   {
-    role: "Groom's Representative",
-    name: "Representative Name",
-    phone: "+256 XXX XXX XXX",
+    role: "Bride",
+    name: "Neoline Nabirye",
+    phone: "+256 786 684 815",
   },
 ];
 
@@ -101,56 +84,57 @@ export default function WeddingDetails() {
               <p className="mt-3 text-sm leading-7 text-[#6B5547] sm:text-base">
                 {card.helper}
               </p>
-
-              {card.title === "Theme Colors" ? (
-                <div className="mt-4 flex flex-wrap gap-3">
-                  {themeSwatches.map((swatch) => (
-                    <div key={swatch.label} className="flex items-center gap-2">
-                      <span
-                        className="h-4 w-4 rounded-full border border-black/10"
-                        style={{ backgroundColor: swatch.color }}
-                      />
-                      <span className="text-xs font-bold uppercase tracking-[0.08em] text-[#5F7164]">
-                        {swatch.label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              ) : null}
             </article>
           ))}
+          <div className="col-span-2 grid gap-5 lg:grid-cols-2">
+            <article className="rounded-3xl border border-[#5F7164]/18 bg-[#F8F2EA]/92 p-6 shadow-[0_14px_30px_rgba(95,113,100,0.12)] lg:col-span-2 sm:p-7">
+              <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#99643C]">
+                Map / Directions & Parking
+              </p>
+
+              <div className="mt-5 grid gap-6">
+                <div>
+                  <p className="text-base leading-8 text-[#6B5547] sm:text-lg">
+                    Use the map links below to get turn-by-turn directions to
+                    either location.
+                  </p>
+
+                  <div className="mt-5 grid gap-3 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Church+of+the+Resurrection,+Bugolobi+COU,+8J8F%2BH6H,+Kampala"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex h-11 items-center justify-center rounded-full bg-[#99643C] px-6 text-sm font-bold uppercase tracking-[0.08em] text-[#F4EEE6] transition-colors hover:bg-[#7F5232]"
+                    >
+                      Church Directions
+                    </a>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Grandville+Manor,+Kampala"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex h-11 items-center justify-center rounded-full border border-[#5F7164]/35 bg-[#F4EEE6] px-6 text-sm font-bold uppercase tracking-[0.08em] text-[#5F7164] transition-colors hover:bg-[#EDE5DA]"
+                    >
+                      Venue Directions
+                    </a>
+                  </div>
+                </div>
+
+                <div className="rounded-2xl border border-[#5F7164]/14 bg-[#F4EEE6]/70 p-4 sm:p-5">
+                  <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#99643C]">
+                    Parking Guidance
+                  </p>
+                  <ul className="mt-3 space-y-2 text-sm leading-7 text-[#6B5547] sm:text-base">
+                    <li>On-site parking is available at both venues.</li>
+                    <li>Parking attendants will guide guest arrival lanes.</li>
+                    <li>Overflow parking signs will be posted nearby.</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
 
-        <div className="mt-6 grid gap-5 lg:grid-cols-3">
-          <article className="rounded-3xl border border-[#5F7164]/18 bg-[#F8F2EA]/92 p-6 shadow-[0_14px_30px_rgba(95,113,100,0.12)] lg:col-span-2">
-            <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#99643C]">
-              Map / Directions
-            </p>
-            <p className="mt-3 text-base leading-8 text-[#6B5547] sm:text-lg">
-              Use the map link below to get turn-by-turn directions to the
-              ceremony venue.
-            </p>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=St.+Andrew%27s+Cathedral+Kampala"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-5 inline-flex h-11 items-center justify-center rounded-full bg-[#99643C] px-6 text-sm font-bold uppercase tracking-[0.08em] text-[#F4EEE6] transition-colors hover:bg-[#7F5232]"
-            >
-              Open in Google Maps
-            </a>
-          </article>
 
-          <article className="rounded-3xl border border-[#5F7164]/18 bg-[#F8F2EA]/92 p-6 shadow-[0_14px_30px_rgba(95,113,100,0.12)]">
-            <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#99643C]">
-              Parking Guidance
-            </p>
-            <ul className="mt-4 space-y-2 text-sm leading-7 text-[#6B5547] sm:text-base">
-              <li>On-site parking is available at both venues.</li>
-              <li>Parking attendants will guide guest arrival lanes.</li>
-              <li>Overflow parking signs will be posted nearby.</li>
-            </ul>
-          </article>
-        </div>
 
         <article className="mt-6 rounded-3xl border border-[#5F7164]/18 bg-[#F8F2EA]/92 p-6 shadow-[0_14px_30px_rgba(95,113,100,0.12)] sm:p-8">
           <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#99643C]">

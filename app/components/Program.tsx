@@ -17,49 +17,49 @@ type ProgramItem = {
 const orderOfDay: ProgramItem[] = [
   {
     title: "Guest Arrival",
-    time: "9:30 AM",
+    time: "10:30 AM",
     detail:
       "Welcome hosts and ushers receive guests and guide seating before the service begins.",
     icon: "arrival",
   },
   {
     title: "Church Service",
-    time: "10:00 AM",
+    time: "11:00 AM",
     detail:
       "A worship-centered ceremony with vows, prayer, and blessing before family and friends.",
     icon: "church",
   },
   {
     title: "Photo Session",
-    time: "12:15 PM",
+    time: "TBD",
     detail:
       "Couple portraits, family group photos, and selected guest photo moments.",
     icon: "photo",
   },
   {
     title: "Reception",
-    time: "1:30 PM",
+    time: "4:00 PM",
     detail:
       "Guests gather at the reception venue for welcome remarks and joyful celebration.",
     icon: "reception",
   },
   {
     title: "Dinner",
-    time: "2:30 PM",
+    time: "5:00 PM",
     detail:
       "A shared meal with fellowship, gratitude, and moments of thanksgiving.",
     icon: "dinner",
   },
   {
     title: "Cake Cutting",
-    time: "4:00 PM",
+    time: "6:30 PM",
     detail:
       "A celebratory cake-cutting moment and toasts from loved ones.",
     icon: "cake",
   },
   {
     title: "Blessing / Send-Off",
-    time: "5:00 PM",
+    time: "TBD",
     detail:
       "Closing prayer, final blessing, and a warm send-off for the couple.",
     icon: "blessing",

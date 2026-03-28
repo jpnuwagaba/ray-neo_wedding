@@ -122,7 +122,9 @@ export default function RSVP() {
               </p>
               <button
                 type="submit"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-[#99643C] px-7 text-sm font-bold uppercase tracking-[0.08em] text-[#F4EEE6] transition-colors hover:bg-[#7F5232]"
+                disabled
+                aria-disabled="true"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-[#B5AAA0] px-7 text-sm font-bold uppercase tracking-[0.08em] text-[#F4EEE6]/90 cursor-not-allowed"
               >
                 Submit RSVP
               </button>

@@ -57,20 +57,20 @@ export default function ScriptureReflections() {
             id="scripture-reflections-title"
             className="font-display max-w-3xl text-4xl leading-tight text-[#5F7164] sm:text-5xl"
           >
-            Verses to pray through as this covenant begins.
+            Pray with us.
           </h2>
 
-          <p className="max-w-2xl text-base leading-8 text-[#6B5547] sm:text-lg">
+          {/* <p className="max-w-2xl text-base leading-8 text-[#6B5547] sm:text-lg">
             Swipe through each passage for a short reflection and how it speaks
             to Raymond and Neoline&apos;s union.
-          </p>
+          </p> */}
         </div>
 
-        <div className="mt-4">
+        {/* <div className="mt-4">
           <p className="inline-flex items-center rounded-full border border-[#5F7164]/20 bg-[#F8F2EA]/70 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-[#99643C]">
             Swipe to reflect
           </p>
-        </div>
+        </div> */}
 
         <div className="mt-10 -mx-6 px-6 sm:-mx-10 sm:px-10 lg:-mx-16 lg:px-16">
           <div className="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 [scrollbar-color:#99643C_transparent]">
