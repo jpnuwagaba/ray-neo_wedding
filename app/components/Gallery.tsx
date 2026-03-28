@@ -187,7 +187,7 @@ export default function Gallery() {
               className="absolute right-0 top-0 inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#F4EEE6]/45 bg-[#241C16]/50 text-2xl leading-none text-[#F8F2EA] transition-colors hover:bg-[#241C16]/80 sm:right-2 sm:top-2"
               aria-label="Close viewer"
             >
-              ×
+              X
             </button>
 
             <button
@@ -196,7 +196,7 @@ export default function Gallery() {
               className="absolute left-0 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#F4EEE6]/45 bg-[#241C16]/50 text-2xl leading-none text-[#F8F2EA] transition-colors hover:bg-[#241C16]/80 sm:left-2 sm:h-11 sm:w-11"
               aria-label="Previous image"
             >
-              ‹
+              {"<"}
             </button>
 
             <div className="relative h-[62vh] min-h-[18rem] w-full max-w-5xl sm:h-[74vh] lg:h-[82vh]">
@@ -216,11 +216,11 @@ export default function Gallery() {
               className="absolute right-0 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[#F4EEE6]/45 bg-[#241C16]/50 text-2xl leading-none text-[#F8F2EA] transition-colors hover:bg-[#241C16]/80 sm:right-2 sm:h-11 sm:w-11"
               aria-label="Next image"
             >
-              ›
+              {">"}
             </button>
 
             <p className="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-full border border-[#F4EEE6]/30 bg-[#241C16]/55 px-3 py-1 text-xs font-bold tracking-[0.12em] text-[#F8F2EA] sm:bottom-2">
-              {activeIndex + 1} / {galleryImages.length}
+              {(activeIndex ?? 0) + 1} / {galleryImages.length}
             </p>
           </div>
         </div>
@@ -228,3 +228,4 @@ export default function Gallery() {
     </>
   );
 }
+
