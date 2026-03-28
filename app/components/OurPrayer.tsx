@@ -10,7 +10,7 @@ export default function OurPrayer() {
       <div className="grid min-h-[72vh] grid-cols-1 lg:grid-cols-[1.55fr_1fr]">
         <div className="relative flex items-center px-6 py-20 sm:px-10 lg:px-16">
           <p className="pointer-events-none absolute left-8 top-12 font-display text-[8rem] leading-none text-[#EDE8E1] sm:left-14 sm:text-[11rem] lg:left-20 lg:text-[14rem]">
-            02.
+            &apos;&apos;
           </p>
 
           <div className="relative z-10 max-w-3xl space-y-6 sm:space-y-8">
