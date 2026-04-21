@@ -7,15 +7,15 @@ const STORY_DURATION_MS = 6500;
 
 const introPhotos = [
   {
-    src: "/assets/2g5a3370.jpg.jpeg",
+    src: "/assets/IMG_1.jpeg",
     alt: "Raymond and Neo sharing a tender moment on a stone walkway.",
   },
   {
-    src: "/assets/2g5a3398.jpg.jpeg",
+    src: "/assets/IMG_2.jpeg",
     alt: "The couple walking together, hand in hand, before their wedding.",
   },
   {
-    src: "/assets/2g5a3441.jpg.jpeg",
+    src: "/assets/IMG_3.jpeg",
     alt: "Close portrait of Raymond and Neo embracing with calm joy.",
   },
 ] as const;
